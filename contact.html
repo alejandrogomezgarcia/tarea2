@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #enlaces{
+            color: black;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+        #textofooter{
+            color: white;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body style="margin: 0%; background-color: #f9f7f0; font-family: sans-serif;">
+    <header>
+        <img src="src/2.jpg" width="100%" height="300px" >
+        <nav style="text-align: center; background-color: #f0f5f9;">
+        <span style="font-size: 24px; padding: 12px; "> 
+            <a id="enlaces" href="home.html">  INICIO</a> 
+            <a id="enlaces" href="aboutme.html"> &nbsp SOBRE MI </a>
+            <a id="enlaces" href="galeria.html"> &nbsp GALERIA</a> 
+            <a id="enlaces" href="contact.html"> &nbsp CONTACTO</a> 
+        </span>
+       </nav>
+    </header>
+    <main style=" margin: 0%;">
+    <section style="padding: 10px; font-size:18px; background-color: #18b7be;">
+    <form action="formSucces.html" method="POST">
+        <label for="username">Nombre de usuario: </label>
+        <input type="text" name="username" id="username"><br>
+        <label for="password">Contraseña</label>
+        <input type="password" name="password" id="password"><br>
+        <label for="age">Edad</label>
+        <input type="" name="age" id="age" step="5"><br>
+        <label for="phone">Numero celular</label>
+        <input type="number" name="phone" id="phone"><br>
+        <label for="size">Estatura:</label>
+        <input type="range" name="size" id="size" min="50" max="300" step="50"><br>
+        <label for="hobbies">Dime tus hobbies</label><br>
+        <label for="swin">Nadar</label>
+        <input type="checkbox" name="swin" id="swin">
+        <label for="run">Correr</label>
+        <input type="checkbox" name="run" id="run">
+        <label for="eat">Comer</label>
+        <input type="checkbox" name="eat" id="eat"><br>
+        <label for="genre">Dime tu genero:</label>
+        <label for="male">Masculino</label>
+        <input type="radio" name="male" id="male">
+        <label for="female">Femenino</label>
+        <input type="radio" name="female" id="female"><br>
+        <label for="city">Ciudad donde vives:</label>
+        <select name="city" id="city">
+            <option value="none"></option>
+            <option value="Cali">Cali</option>   
+            <option value="Cartagena">Cartagena</option>
+            <option value="Medellin">Medellin</option>
+            <option value="Bogota">Bogota</option>
+            <option value="Pereira">Pereira</option>
+        </select><br>
+        <input type="text" list="barrios">
+        <datalist id="barrios">
+            <option value="none"></option>
+            <option value="Bochalema">Bochalema</option>   
+            <option value="Laures">Laures</option>
+            <option value="Castillo">Castillo</option>
+            <option value="El poblado">El poblado</option>
+            <option value="La calera">La calera</option>
+        </datalist><br>
+        <label for="comments">Dejanos tu comentario</label><br>
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea><br>
+        <input type="submit" value="enviar">
+    </form>
+    </section>
+    </main>
+</body>
+</html>
